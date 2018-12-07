@@ -1,0 +1,138 @@
+/* css reset  */
+
+body,html,div{
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+
+@import "./style.less";
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+td,
+th,
+caption {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+// h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 400;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    font-weight: 400;
+}
+
+input,
+textarea,
+select,
+button {
+    font:400 14px "PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    color: @c1;
+    &::placeholder{
+        color: @c3;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+/* css common */
+
+.clearfix {
+    /**zoom:1;*/
+    height: 0;
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+header,
+section,
+article,
+footer {
+    display: block/*\9*/
+    ;
+}
